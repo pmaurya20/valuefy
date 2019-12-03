@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,132 +9,139 @@
 	<!-- Global CSS -->
 	<link rel="stylesheet" href="assets/css/style.css">
 	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="assets/css/bootstrap.min.css">	
-	
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
 </head>
+
 <body>
-	<div class="container">
+	<div class="main-container">
 		<!-- Header -->
 		<header>
-			<div class="wrapper d-flex">
-				<div class="logo-close">
-					<a href="javascript:void(0)" title="Back">&#8592;</a>
-					<h1><a href="index.html"><img src="assets/images/invezta-logo.png" alt="Invezta Logo"/></a></h1>
+			<div class="container d-flex align-items-center">
+				<div class="d-flex align-items-center">
+					<a href="javascript:void(0)" title="Back" class="header-icon mr-4">&#8592;</a>
+					<h1 class="mb-0"><a href="index.html"><img src="assets/images/invezta-logo.png" alt="Invezta Logo"
+								width="150" class="vertical-top"/></a></h1>
 				</div>
-				<a href="javascript:void(0)" class="ml-auto" title="Close">&times;</a>
+				<a href="javascript:void(0)" class="ml-auto header-icon" title="Close">&times;</a>
 			</div>
 		</header>
 
 		<!-- Main Content-->
-		<div class="main-content">
-			<!-- Page Head -->
-			<div class="page-head">
-				<h2 class="page-title">Your Recommended Portfolio</h2>
-				<small>How did we do it?</small>
-			</div>
+		<div class="main-content py-5">
+			<div class="container">
+				<!-- Page Head -->
+				<div class="page-head">
+					<h2 class="page-title">Your Recommended Portfolio</h2>
+					<small>How did we do it?</small>
+				</div>
 
-			<!-- Investement -->
-			<ul class="row investement-list">
-				<li class="col-md-2 d-flex investement-item">
-					<div class="investement-content">
-						<h3>Car</h3>
-						<span>Goal Selected</span>
-					</div>					
-				</li>
-				<li class="col-md-2 d-flex investement-item">
-					<span class="glyphicon glyphicon-calendar investement-icon"></span>>
-					<div class="investement-content">
-						<h3>9L</h3>
-						<span>Target Amount</span>
-					</div>					
-				</li>
-				<li class="col-md-2 d-flex investement-item">
-					<span class="investement-icon">&#x20b9;</span>
-					<div class="investement-content">
-						<h3>Jun 2032</h3>
-						<span>Target Date</span>
-					</div>					
-				</li>
-				<li class="col-md-3 d-flex investement-item">
-					<span class="investement-icon">&#x20b9;</span>
-					<div class="investement-content">
-						<h3>SIP</h3>
-						<span>Investement Type</span>
-					</div>					
-				</li>
-				<li class="col-md-3 d-flex investement-item">
-					<span class="investement-icon">&#x20b9;</span>
-					<div class="investement-content">
-						<h3>30,000</h3>
-						<span>Investement Needed</span>
-					</div>					
-				</li>
-			</ul>
+				<!-- Investement -->
+				<ul class="d-flex justify-content-between investement-list p-0">
+					<li class="d-flex investement-item align-items-center">
+						<div class="investement-content">
+							<h3>Car</h3>
+							<span>Goal Selected</span>
+						</div>
+					</li>
+					<li class="d-flex investement-item align-items-center">
+						<span class="investement-icon">&#x20b9;</span>
+						<div class="investement-content">
+							<h3>9L</h3>
+							<span>Target Amount</span>
+						</div>
+					</li>
+					<li class="d-flex investement-item align-items-center">
+						<img src="assets/images/calender.svg" alt="Calander" width="35" class="investement-icon">
+						<div class="investement-content">
+							<h3>Jun 2032</h3>
+							<span>Target Date</span>
+						</div>
+					</li>
+					<li class="d-flex investement-item">
+						<div class="investement-content">
+							<h3>SIP</h3>
+							<span>Investement Type</span>
+						</div>
+					</li>
+					<li class="d-flex investement-item">
+						<span class="investement-icon">&#x20b9;</span>
+						<div class="investement-content">
+							<h3>30,000</h3>
+							<span>Investement Needed</span>
+						</div>
+					</li>
+				</ul>
 
-			<!-- Brand Investement -->
-			<div class="row brand-investement">
-				<!-- Brand Donut -->
-				<div class="col-md-4">
-					  <div class="donut-chart-block block"> 
+				<!-- Brand Investement -->
+				<div class="row brand-investement">
+					<!-- Brand Donut -->
+					<div class="col-md-4">
 						<div class="donut-chart">
-							<div id="debt" class="portion-block"><div class="circle"></div></div>
-							<div id="equity" class="portion-block"><div class="circle"></div></div>
+							<div id="debt" class="portion-block">
+								<div class="circle"></div>
+							</div>
+							<div id="equity" class="portion-block">
+								<div class="circle"></div>
+							</div>
 							<div class="donut-center">
 								<p class="debt donut-content">Debt 50%</p>
 								<p class="equity donut-content">Equity 50%</p>
-							</div>        
+							</div>
 						</div>
+						<div class="investement-footer"><small>Aditya Birla Sun Life Frontline Equity Fund - Growth -
+								Direct
+								Plan(25%)</small></div>
 					</div>
-					<div class="investement-footer"><small>Aditya Birla Sun Life Frontline Equity Fund - Growth - Direct Plan(25%)</small></div>
-				</div>
 
-				<!-- Brand Investement Content -->
-				<div class="col-md-8">
-					<ul class="brand-investement-content nav nav-pills flex-column" role="tablist">
-						<li>
-							<a class="d-flex">
-								<div class="investement-info">
-									<h4>Aditya Birla Sun Life Frontline Equity Fund - Growth - Direct Plan</h4>
-									<ul>
-										<li>Large Cap</li>
-										<li>Min. Investement Amt: 500</li>
-									</ul>
-								</div>
-								<div class="ml-auto">10,000</div>
-							</a>							
-						</li>
-						<li>
-							<a class="d-flex">
-								<div class="brand-info">
-									<h4>Franklin India prime Fund - Growth - Direct Plan</h4>
-									<ul>
-										<li>Mid/Small Cap</li>
-										<li>Min. Investement Amt: 500</li>
-									</ul>
-								</div>
-								<div class="ml-auto">10,000</div>
-							</a>
-						</li>
-						<li>
-							<a class="d-flex">
-								<div class="brand-info">
-									<h4>ICICI Prudential Bond Fund - Growth - Direct Plan</h4>
-									<ul>
-										<li>Long Term Income/Gilt</li>
-										<li>Min. Investement Amt: 500</li>
-									</ul>
-								</div>
-								<div class="ml-auto">10,000</div>
-							</a>
-						</li>
-					</ul>
-					<div class="investement-footer text-right"><small>All values are in INR</small></div>
-					<!-- Start Investing CTA-->
-					<button class="btn btn-invezta">Start Investing Now</button>
+					<!-- Brand Investement Content -->
+					<div class="col-md-8">
+						<ul class="brand-investement-content nav nav-pills flex-column" role="tablist">
+							<li>
+								<a class="d-flex">
+									<div class="investement-info">
+										<h4>Aditya Birla Sun Life Frontline Equity Fund - Growth - Direct Plan</h4>
+										<ul>
+											<li>Large Cap</li>
+											<li>Min. Investement Amt: 500</li>
+										</ul>
+									</div>
+									<div class="ml-auto">10,000</div>
+								</a>
+							</li>
+							<li>
+								<a class="d-flex">
+									<div class="brand-info">
+										<h4>Franklin India prime Fund - Growth - Direct Plan</h4>
+										<ul>
+											<li>Mid/Small Cap</li>
+											<li>Min. Investement Amt: 500</li>
+										</ul>
+									</div>
+									<div class="ml-auto">10,000</div>
+								</a>
+							</li>
+							<li>
+								<a class="d-flex">
+									<div class="brand-info">
+										<h4>ICICI Prudential Bond Fund - Growth - Direct Plan</h4>
+										<ul>
+											<li>Long Term Income/Gilt</li>
+											<li>Min. Investement Amt: 500</li>
+										</ul>
+									</div>
+									<div class="ml-auto">10,000</div>
+								</a>
+							</li>
+						</ul>
+						<div class="investement-footer text-right"><small>All values are in INR</small></div>
+						<!-- Start Investing CTA-->
+						<button class="btn btn-invezta">Start Investing Now</button>
+					</div>
 				</div>
 			</div>
-
 		</div>
 	</div>
 </body>
+
 </html>
